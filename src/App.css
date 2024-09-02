@@ -1,0 +1,22 @@
+:root {
+  --dark-blue: #0b0d17;
+  --light-purple: #d0d6f9;
+  --light-grey: #979797;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+}
+
+.mainPageContainer {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  /* min-height: 100vh; */
+  background-color: var(--dark-blue);
+  color: white;
+  position: relative;
+}

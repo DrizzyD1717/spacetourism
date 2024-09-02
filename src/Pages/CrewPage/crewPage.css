@@ -1,0 +1,103 @@
+.crewPage {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../../assets/crew/background-crew-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding-top: 130px;
+}
+
+.crewPage .crewPageOverall {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.crewPageOverall .header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.crewPageOverall .header span {
+  font-weight: bold;
+  color: grey;
+  padding-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.crewPageOverall .crewContentsContainer {
+  display: flex;
+  gap: 0 2rem;
+  align-items: center;
+}
+
+.crewPageOverall .crewContentsContainer .left h1 {
+  color: rgb(255, 255, 255, 0.5);
+
+  margin-bottom: 1rem;
+}
+
+.crewPageOverall .crewContentsContainer .left h2 {
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+}
+
+.crewPageOverall .crewContentsContainer .left p {
+  color: var(--light-purple);
+  line-height: 1.5rem;
+}
+
+.crewPageOverall .crewContentsContainer .right {
+}
+
+.crewPageOverall .crewContentsContainer .right img {
+  max-height: 400px;
+}
+
+.crewPageOverall .radioBtn {
+  margin-top: 1.5rem;
+}
+
+.crewPageOverall .radioBtn button {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.crewPageOverall .radioBtn button:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.crewPageOverall .radioBtn input[type="radio"]:checked {
+  background-color: white;
+  height: 60px;
+}
+
+@media (max-width: 1000px) {
+  .crewPageOverall .crewContentsContainer {
+    margin-top: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .crewPageOverall .crewContentsContainer .left {
+    margin-bottom: 2rem;
+  }
+
+  .crewPageOverall .radioBtn {
+    margin: 3rem 0 2rem 0;
+  }
+}
+
+.white {
+  background-color: white;
+}

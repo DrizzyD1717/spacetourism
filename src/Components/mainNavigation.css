@@ -1,0 +1,53 @@
+.mainNavigation {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  z-index: 100;
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.mainNavigation .logoAndLine {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
+}
+
+.mainNavigation .logoAndLine .line {
+  width: 100%;
+  height: 0;
+  border: 1px solid var(--light-purple);
+}
+
+.mainNavigation a {
+  color: white;
+  display: inline-block;
+  padding-right: 1rem;
+  text-decoration: none;
+}
+
+.mainNavigation .navigation a span {
+  padding-right: 0.4rem;
+}
+
+.mainNavigation .navigation {
+  display: flex;
+  background: linear-gradient(hsla(0, 0%, 100%, 0.3), hsla(0, 0%, 100%, 0.3));
+  padding: 1rem;
+}
+
+.mainNavigation .navigation span {
+  font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  .mainNavigation {
+    display: none;
+  }
+}
